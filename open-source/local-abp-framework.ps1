@@ -1,2 +1,2 @@
-$unique_number = Get-Date -UFormat "%y%m%d%H%M%S"
-abp new Abp.LocalFramework$unique_number -t app -csf --mobile none --local-framework-ref --abp-path C:\source\abp
+if ((Test-Path -Path "_common.ps1") -eq $True) { . ./_common.ps1}
+iex "abp new Abp.LocalFramework$unique_number -t app --mobile none --local-framework-ref --abp-path C:\source\abp -csf $output_folder"

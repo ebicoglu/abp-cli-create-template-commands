@@ -1,2 +1,2 @@
-$unique_number = Get-Date -UFormat "%y%m%d%H%M%S"
-abp new Mvc.MongoTier$unique_number -t app -u mvc --tiered --database-provider mongodb -csf --mobile none
+if ((Test-Path -Path "_common.ps1") -eq $True) { . ./_common.ps1}
+iex "abp new Mvc.MongoTier$unique_number -t app -u mvc --tiered --database-provider mongodb --mobile none
