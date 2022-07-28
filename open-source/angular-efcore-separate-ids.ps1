@@ -1,2 +1,1 @@
-if ((Test-Path -Path "_common.ps1") -eq $True) { . ./_common.ps1}
-iex "abp new Angular.EfCoreSeparateIds$unique_number -t app -u angular -m none --separate-identity-server --database-provider ef -csf $output_folder"
+abp new Angular.EfCoreSeparateIds$(Get-Date -UFormat "%y%m%d%H%M%S") -t app -u angular -m none --separate-identity-server --database-provider ef -csf

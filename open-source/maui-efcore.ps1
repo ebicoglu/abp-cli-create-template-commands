@@ -1,2 +1,1 @@
-if ((Test-Path -Path "_common.ps1") -eq $True) { . ./_common.ps1}
-iex "abp new Maui.EfCore$unique_number -t maui -u mvc --mobile none --database-provider ef -csf $output_folder"
+abp new Maui.EfCore$(Get-Date -UFormat "%y%m%d%H%M%S") -t maui -u mvc --mobile none --database-provider ef -csf

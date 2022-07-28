@@ -1,2 +1,1 @@
-if ((Test-Path -Path "_common.ps1") -eq $True) { . ./_common.ps1}
-iex "abp new NoLayer.AngularMongo$unique_number -t app-nolayers-pro -u angular --mobile none --database-provider mongodb -csf $output_folder"
+abp new NoLayer.AngularMongo$(Get-Date -UFormat "%y%m%d%H%M%S") -t app-nolayers-pro -u angular --mobile none --database-provider mongodb -csf

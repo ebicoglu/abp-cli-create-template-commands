@@ -1,2 +1,1 @@
-if ((Test-Path -Path "_common.ps1") -eq $True) { . ./_common.ps1}
-iex "abp new Angular.PostgreSql$unique_number -t app -u angular --database-management-system PostgreSQL --mobile none -csf $output_folder"
+abp new Angular.PostgreSql$(Get-Date -UFormat "%y%m%d%H%M%S") -t app -u angular --database-management-system PostgreSQL --mobile none -csf

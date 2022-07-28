@@ -1,2 +1,1 @@
-if ((Test-Path -Path "_common.ps1") -eq $True) { . ./_common.ps1}
-iex "abp new Microservice.AngularMongo$unique_number -t microservice-pro -u angular --mobile none --database-provider mongodb -csf $output_folder"
+abp new Microservice.AngularMongo$(Get-Date -UFormat "%y%m%d%H%M%S") -t microservice-pro -u angular --mobile none --database-provider mongodb -csf

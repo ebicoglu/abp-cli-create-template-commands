@@ -1,3 +1,1 @@
-if ((Test-Path -Path "_common.ps1") -eq $True) { . ./_common.ps1}
-iex "abp new Abp.CustomLocal$unique_number -t app -u mvc --mobile none --database-provider ef --template-source c:\MyProjects\templates\app" -csf $output_folder"
-
+abp new Abp.CustomLocal$(Get-Date -UFormat "%y%m%d%H%M%S") -t app -u mvc --mobile none --database-provider ef --template-source c:\MyProjects\templates\app -csf

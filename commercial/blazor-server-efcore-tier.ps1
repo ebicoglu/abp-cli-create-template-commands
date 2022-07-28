@@ -1,2 +1,1 @@
-if ((Test-Path -Path "_common.ps1") -eq $True) { . ./_common.ps1}
-iex "abp new BlazorServer.EfCoreTier$unique_number -t app-pro -u blazor-server --tiered --mobile none -csf $output_folder"
+abp new BlazorServer.EfCoreTier$(Get-Date -UFormat "%y%m%d%H%M%S") -t app-pro -u blazor-server --tiered --mobile none -csf

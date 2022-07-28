@@ -1,2 +1,1 @@
-if ((Test-Path -Path "_common.ps1") -eq $True) { . ./_common.ps1}
-iex "abp new Local.AbpFramework$unique_number -t app-pro --mobile none --local-framework-ref --abp-path C:\source\abp -csf $output_folder"
+abp new Local.AbpFramework$(Get-Date -UFormat "%y%m%d%H%M%S") -t app-pro --mobile none --local-framework-ref --abp-path C:\source\abp -csf
